@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios'
 import Card from 'react-bootstrap/Card'
+import './App.css'
 
 const StateDirectory = () => {
 	const [states, setStates] = useState([])
@@ -32,8 +33,8 @@ const StateDirectory = () => {
 		<>
 			{states.map((state) => {
 				return (
-					<>
-						<Card>
+					<div className='wrapper-states'>
+						<Card className='state-container'>
 							<Card.Title> {state.name}</Card.Title>
 							<a
 								href={state.covid19Site}
@@ -43,7 +44,7 @@ const StateDirectory = () => {
 							</a>
 						
 						</Card>
-					</>
+					</div>
 				)
 			})}
 		</>
