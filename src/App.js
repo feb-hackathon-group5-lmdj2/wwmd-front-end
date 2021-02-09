@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import Home from './Home'
 import StateDirectory from './StateDirectory';
 import Share from './Share'
@@ -9,8 +9,8 @@ function App() {
   return (
 		<div className='App'>
 			<header className='App-header'>
-        <Navigation /> 
-      </header>
+				<Navigation />
+			</header>
 			<Route
 				path='/'
 				exact
@@ -21,7 +21,14 @@ function App() {
 
 			<Share />
 
-			<StateDirectory />
+			<Route
+				path='/states'
+				exact
+				render={(routerProps) => {
+					return <StateDirectory match={routerProps.match} />
+				}}
+			/>
+      
 		</div>
 	)
 }
