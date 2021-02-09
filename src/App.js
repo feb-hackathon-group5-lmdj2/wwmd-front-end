@@ -3,11 +3,11 @@ import Home from './Home';
 import StateDirectory from './StateDirectory';
 import Share from './Share';
 import Navigation from './Navigation';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Route } from 'react-router-dom';
 
 function App() {
 	return (
-		<Router>
+		<div>
 			<Navigation />
 			<div>
 				<Route exact path='/directory' component={StateDirectory} />
@@ -19,12 +19,8 @@ function App() {
 						return <Home match={routerProps.match} />;
 					}}
 				/>
-
-				<Share />
-
-				<StateDirectory />
 			</div>
-		</Router>
+		</div>
 	);
 }
 
