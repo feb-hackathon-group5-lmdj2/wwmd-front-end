@@ -4,7 +4,8 @@ import Card from 'react-bootstrap/Card'
 import './App.css'
 
 const StateDirectory = () => {
-	const [states, setStates] = useState([])
+    const [states, setStates] = useState([])
+    const [stateNames, setStateNames] = useState([])
 
 	const initUrl = `https://api.covidtracking.com/v1/states/info.json`
 
@@ -24,16 +25,27 @@ const StateDirectory = () => {
 		Axios(url)
 			.then((data) => {
 				// console.log(data.data.subclasses[0].name)
-				console.log(data.data)
-				setStates(data.data)
+				// console.log(data.data)
+                setStates(data.data)
+                
+                let array = states.map((state) => {
+                    return (state.name)
+                })
+
+                setStateNames(array)
+                console.log(stateNames)
+
 			})
-			.catch(console.error)
-	}
+            .catch(console.error)
+    
+    }
+    
+    
 	return (
 		<>
 			{states.map((state) => {
 				return (
-					<div className='wrapper-states'>
+					<div key={state.name}>
 						<Card className='state-container'>
 							<Card.Title> {state.name}</Card.Title>
 							<a

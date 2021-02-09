@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* .App-logo {
@@ -27,7 +27,7 @@
 .App-link {
   color: #61dafb;
 }
-
+/* 
 .wrapper-states {
   display: grid;
 	padding: 3rem;
@@ -36,4 +36,4 @@
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 	grid-auto-rows: minmax(250px, auto);
   grid-gap: 5rem;
-}
+} */
