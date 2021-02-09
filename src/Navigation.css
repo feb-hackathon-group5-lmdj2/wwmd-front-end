@@ -1,5 +1,5 @@
 .navbar {
-	background: black !important;
+	background: gray !important;
 	font-family: 'Monaco' !important;
 	color: white !important;
 	font-size: 24px !important;
@@ -15,8 +15,8 @@
 	width: 80px;
 	height: auto;
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
 	.brand {
 		font-size: 30px !important;
 	}
-}
+} */
