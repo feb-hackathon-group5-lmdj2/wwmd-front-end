@@ -1,3 +1,4 @@
+
 import './App.css';
 import Home from './Home';
 import StateDirectory from './StateDirectory';
@@ -6,10 +7,13 @@ import Navigation from './Navigation';
 import { BrowserRouter as Route } from 'react-router-dom';
 
 function App() {
+
 	return (
-		<div>
+	<div>
+    <div>
 			<Navigation />
-			<div>
+      </div>
+		
 				<Route exact path='/directory' component={StateDirectory} />
 				<Route exact path='/share' component={Share} />
 				<Route
@@ -19,7 +23,14 @@ function App() {
 						return <Home match={routerProps.match} />;
 					}}
 				/>
-			</div>
+			<Route
+				path='/states'
+				exact
+				render={(routerProps) => {
+					return <StateDirectory match={routerProps.match} />
+				}}
+			/>
+
 		</div>
 	);
 }
