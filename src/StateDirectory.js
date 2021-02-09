@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios'
+import Card from 'react-bootstrap/Card'
 
 const StateDirectory = () => {
 	const [states, setStates] = useState([])
@@ -28,19 +29,24 @@ const StateDirectory = () => {
 			.catch(console.error)
 	}
 	return (
-		<div>
+		<>
 			{states.map((state) => {
 				return (
-					<div>
-						<p> {state.name}</p>
-                        <a 
-                        href={state.covid19Site} target='_blank'
-                        rel='noopener noreferrer' >Link to state</a>
-						{/* <p> {state.covid19Site}</p> */}
-					</div>
+					<>
+						<Card>
+							<Card.Title> {state.name}</Card.Title>
+							<a
+								href={state.covid19Site}
+								target='_blank'
+								rel='noopener noreferrer'>
+								Link to state
+							</a>
+						
+						</Card>
+					</>
 				)
 			})}
-		</div>
+		</>
 	)
 }
 
