@@ -1,4 +1,5 @@
 import React from 'react';
+import { FacebookShareButton, FacebookIcon } from 'react-share';
 
 const Share = () => {
     return (
