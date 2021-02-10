@@ -7,7 +7,7 @@ import {
 } from 'react-share';
 import BootstrapModal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
-import CarouselHome from './CarouselHome';
+import ModalCarousel from './ModalCarousel';
 
 function BadgeModal({ show, handleClose }) {
 	return (
@@ -17,7 +17,7 @@ function BadgeModal({ show, handleClose }) {
 			</BootstrapModal.Header>
 			<BootstrapModal.Body>
 				Woohoo, you're reading this text in a modal!
-				<CarouselHome />
+				<ModalCarousel />
 			</BootstrapModal.Body>
 			<BootstrapModal.Footer>
 				<Button variant='secondary' onClick={handleClose}>
