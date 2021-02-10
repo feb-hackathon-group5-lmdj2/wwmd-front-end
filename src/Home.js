@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import {
 	Card,
 	Button,
@@ -7,43 +7,21 @@ import {
 	Row,
 	Image,
 	Jumbotron,
-} from 'react-bootstrap'
-import CarouselHome from './CarouselHome'
-import BadgeModal from './BadgeModal'
-import Axios from 'axios'
+} from 'react-bootstrap';
+import CarouselHome from './CarouselHome';
+import BadgeModal from './BadgeModal';
+import Axios from 'axios';
 
 const Home = () => {
-	const [show, setShow] = useState(false)
-	const handleClose = () => setShow(false)
-	const handleShow = () => setShow(true)
+	const [show, setShow] = useState(false);
+	const handleClose = () => setShow(false);
+	const handleShow = () => setShow(true);
 
-	const [image, setImage] = useState()
-
-	const url = `https://blooming-earth-00957.herokuapp.com/songs/9`
-
-	Axios(url)
-		.then((data) => {
-            setImage(data.data.image)
-			console.log(data.data.image)
-		})
-		.catch(console.error)
-    
-    const download = () => { 
-        // window.location.href = image
-        window.open(image)
-
-    }
+	const url = `https://blooming-earth-00957.herokuapp.com/songs/9`;
 
 	return (
 		// <Container fluid='md'>
 		<div className='site-wrapper'>
-            <img src={image} alt='ok' style={{
-                height: '150px'
-            }}>
-
-            </img>
-            <button
-            onClick={download}>download</button>
 			<div className='jumbo-wrapper'>
 				<Jumbotron className='header'>
 					<h4 className='header-title'>Hi, I'm Max the mask!</h4>
@@ -85,8 +63,7 @@ const Home = () => {
 			</div>
 			<BadgeModal show={show} handleClose={handleClose} />
 		</div>
-	)
-}
+	);
+};
 
-export default Home
-
+export default Home;
