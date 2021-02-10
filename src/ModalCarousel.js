@@ -1,48 +1,66 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import badge1 from './images/Badge1.png';
+import badge2 from './images/Badge2.png';
+import badge3 from './images/Badge3.png';
+import badge4 from './images/Badge4.png';
+import badge5 from './images/Badge5.png';
+import Button from 'react-bootstrap/Button';
+
+import { FacebookShareButton, FacebookIcon } from 'react-share';
+
+function download(badge) {
+	window.open(badge);
+}
 
 const ModalCarousel = () => {
-   return (
-			<Carousel className='carousel' style={{ minHeight: '40vh' }}>
-				<Carousel.Item style={{ minHeight: '5vh' }}>
-					<img
-						className='d-block w-100'
-						src='holder.js/800x400?text=First slide&bg=373940'
-						alt='First slide'
-					/>
-					<Carousel.Caption>
-						<h3>First slide label</h3>
-						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-					</Carousel.Caption>
-				</Carousel.Item>
-				<Carousel.Item>
-					<img
-						className='d-block w-100'
-						src='holder.js/800x400?text=Second slide&bg=282c34'
-						alt='Third slide'
-					/>
+	return (
+		<Carousel className='modal-carousel' style={{ minHeight: '40vh' }}>
+			<Carousel.Item style={{ minHeight: '5vh' }}>
+				<img className='d-block w-100' src={badge1} alt='Badge 1' />
+				<Carousel.Caption>
+					<Button onClick={() => download(badge1)}>Download</Button>
+					{/* <FacebookShareButton
+						url={
+							'https://www.cdc.gov/coronavirus/2019-ncov/vaccines/index.html'
+						}
+						quote={'I got the COVID vaccine!'}
+						hashtag='#covid19'
+						className={FacebookShareButton}>
+						<FacebookIcon size={36} />
+					</FacebookShareButton> */}
+				</Carousel.Caption>
+			</Carousel.Item>
+			<Carousel.Item>
+				<img className='d-block w-100' src={badge2} alt='Badge 2' />
 
-					<Carousel.Caption>
-						<h3>Second slide label</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</Carousel.Caption>
-				</Carousel.Item>
-				<Carousel.Item>
-					<img
-						className='d-block w-100'
-						src='holder.js/800x400?text=Third slide&bg=20232a'
-						alt='Third slide'
-					/>
+				<Carousel.Caption>
+					<Button onClick={() => download(badge2)}>Download</Button>
+				</Carousel.Caption>
+			</Carousel.Item>
+			<Carousel.Item>
+				<img className='d-block w-100' src={badge3} alt='Badge 3' />
 
-					<Carousel.Caption>
-						<h3>Third slide label</h3>
-						<p>
-							Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-						</p>
-					</Carousel.Caption>
-				</Carousel.Item>
-			</Carousel>
-		);
+				<Carousel.Caption>
+					<Button onClick={() => download(badge3)}>Download</Button>
+				</Carousel.Caption>
+			</Carousel.Item>
+			<Carousel.Item>
+				<img className='d-block w-100' src={badge4} alt='Badge 4' />
+
+				<Carousel.Caption>
+					<Button onClick={() => download(badge4)}>Download</Button>
+				</Carousel.Caption>
+			</Carousel.Item>
+			<Carousel.Item>
+				<img className='d-block w-100' src={badge5} alt='Badge 5' />
+
+				<Carousel.Caption>
+					<Button onClick={() => download(badge5)}>Download</Button>
+				</Carousel.Caption>
+			</Carousel.Item>
+		</Carousel>
+	);
 };
 
 export default ModalCarousel;
