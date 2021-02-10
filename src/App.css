@@ -43,6 +43,11 @@
 	width: 374px;
 	height: 118px;
 	left: 20px;
+
+	/* margin: 2em; */
+  margin-top: 40px;
+  
+
 	background-color: #e1eeff;
 }
 .badge-card-title {
@@ -71,9 +76,16 @@
 }
 .cdc-card {
 	width: 374px;
-	height: auto;
-	left: 20px;
-	margin: 1em;
+
+	height: 118px;
+	left: 150px;
+  top: 100px;
+	/* margin: 1em; */
+  margin-top: 1.7em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  margin-left: 1.27em;
+
 	color: black;
 	background-color: #fffaca;
 	border-radius: 8px;
@@ -100,12 +112,61 @@ hr {
 	background-repeat: no-repeat;
 }
 .carousel {
-	width: 394px;
+	width: 374px;
 	height: 527px;
 	left: 20px;
-	top: 2em;
+	top: 1em;
 	background-color: #e5e5e5;
 }
+
+.talk-card {
+  width: 374px;
+	height: 75px;
+	left: 20px;
+	/* margin: 1em; */
+  border-radius: 8px;
+	border: 1px;
+  text-align: center;
+
+}
+
+.site-wrapper {
+
+  /* display: grid;
+  grid-template-columns: 1em, 600px, 1em;
+  /* grid-template-rows: 150px, 180px, 700px, 250px, 250px; */
+  /* grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;   */ 
+
+}
+
+.jumbo-wrapper {
+
+  grid-row: 1 / span 1;
+  
+
+}
+
+.talk-wrapper { 
+  grid-row: 2 /span 1;
+}
+
+.cara-wrapper {
+  grid-row: 3 / span 1;
+
+}
+
+.badge-wrapper {
+  grid-row: 4 / span 1; 
+
+
+}
+
+.cdc-wrapper {
+  grid-row: 6 / span 1; 
+
+
+}
+
 
 @media screen and (max-width: 600px) {
 	.brand {
