@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import Axios from 'axios';
 import {
 	FacebookShareButton,
 	FacebookIcon,
@@ -10,6 +11,9 @@ import Button from 'react-bootstrap/Button';
 import ModalCarousel from './ModalCarousel';
 
 function BadgeModal({ show, handleClose }) {
+
+
+
 	return (
 		<BootstrapModal show={show} onHide={handleClose}>
 			<BootstrapModal.Header closeButton>
@@ -17,7 +21,7 @@ function BadgeModal({ show, handleClose }) {
 			</BootstrapModal.Header>
 			<BootstrapModal.Body>
 				Woohoo, you're reading this text in a modal!
-				<ModalCarousel />
+				{/* <ModalCarousel /> */}
 			</BootstrapModal.Body>
 			<BootstrapModal.Footer>
 				<Button variant='secondary' onClick={handleClose}>
