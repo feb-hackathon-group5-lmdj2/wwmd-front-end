@@ -119,6 +119,15 @@ hr {
 	background-color: #e5e5e5;
 }
 
+
+.modal-carousel {
+	width: 394px;
+	height: auto;
+	left: 20px;
+	top: 2em;
+	background-color: #e5e5e5;
+}
+
 .talk-card {
   width: 374px;
 	height: 75px;

@@ -17,11 +17,12 @@ function BadgeModal({ show, handleClose }) {
 	return (
 		<BootstrapModal show={show} onHide={handleClose}>
 			<BootstrapModal.Header closeButton>
-				<BootstrapModal.Title>Modal title</BootstrapModal.Title>
+				<BootstrapModal.Title>Badges</BootstrapModal.Title>
 			</BootstrapModal.Header>
 			<BootstrapModal.Body>
-				Woohoo, you're reading this text in a modal!
-				{/* <ModalCarousel /> */}
+
+				<ModalCarousel />
+
 			</BootstrapModal.Body>
 			<BootstrapModal.Footer>
 				<Button variant='secondary' onClick={handleClose}>
