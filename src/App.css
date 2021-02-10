@@ -2,11 +2,6 @@
   /* text-align: center; */
 }
 
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -27,13 +22,4 @@
 .App-link {
   color: #61dafb;
 }
-/* 
-.wrapper-states {
-  display: grid;
-	padding: 3rem;
-	margin: 20px 5rem;
-	justify-content: center;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-	grid-auto-rows: minmax(250px, auto);
-  grid-gap: 5rem;
-} */
+
