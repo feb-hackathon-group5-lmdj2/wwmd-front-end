@@ -1,11 +1,10 @@
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel'
-import './App.css'
+import Carousel from 'react-bootstrap/Carousel';
 
-const CarouselHome = () => {
-    return (
-			<Carousel className='carousel' style={{minHeight: '40vh'}}>
-				<Carousel.Item style={{minHeight: '5vh'}}>
+const ModalCarousel = () => {
+   return (
+			<Carousel className='carousel' style={{ minHeight: '40vh' }}>
+				<Carousel.Item style={{ minHeight: '5vh' }}>
 					<img
 						className='d-block w-100'
 						src='holder.js/800x400?text=First slide&bg=373940'
@@ -43,7 +42,7 @@ const CarouselHome = () => {
 					</Carousel.Caption>
 				</Carousel.Item>
 			</Carousel>
-		)
+		);
 };
 
-export default CarouselHome;
+export default ModalCarousel;
