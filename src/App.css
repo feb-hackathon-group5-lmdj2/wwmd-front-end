@@ -1,12 +1,12 @@
-.App {
+@import 'bootstrap/dist/css/bootstrap.min.css';
+/* .App {
   /* text-align: center; */
-}
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 /* .App-header {
   background-color: #282c34;
@@ -19,7 +19,11 @@
   color: white;
 } */
 
-.App-link {
-  color: #61dafb;
+.carousel { 
+/* position: absolute; */
+width: 394px;
+height: 527px;
+left: 20px;
+/* top: 342px; */
+background-color: #E5E5E5;
 }
-

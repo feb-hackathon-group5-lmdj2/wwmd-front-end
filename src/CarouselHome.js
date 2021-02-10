@@ -1,10 +1,11 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel'
+import './App.css'
 
 const CarouselHome = () => {
     return (
-			<Carousel>
-				<Carousel.Item>
+			<Carousel className='carousel' style={{minHeight: '40vh'}}>
+				<Carousel.Item style={{minHeight: '5vh'}}>
 					<img
 						className='d-block w-100'
 						src='holder.js/800x400?text=First slide&bg=373940'

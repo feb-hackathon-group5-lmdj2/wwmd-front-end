@@ -6,7 +6,7 @@ import {
 	TwitterIcon,
 } from 'react-share';
 
-function Share(props) {
+function BadgeModal(props) {
 	return (
 		<div>
 			<FacebookShareButton
@@ -27,4 +27,4 @@ function Share(props) {
 	);
 }
 
-export default Share;
+export default BadgeModal;
