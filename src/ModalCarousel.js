@@ -7,11 +7,11 @@ import badge4 from './images/Badge4.png';
 import badge5 from './images/Badge5.png';
 import Button from 'react-bootstrap/Button';
 
-import { FacebookShareButton, FacebookIcon } from 'react-share';
+// import { FacebookShareButton, FacebookIcon } from 'react-share';
 
-function download(badge) {
-	window.open(badge);
-}
+// function download(badge) {
+// 	window.open(badge);
+// }
 
 const ModalCarousel = () => {
 	return (
@@ -24,8 +24,13 @@ const ModalCarousel = () => {
 				<br />
 
 				<Carousel.Caption>
-					<Button onClick={() => download(badge1)} className='badge-btn'>
+					{/* <Button onClick={() => download(badge1)} className='badge-btn'>
 						Download
+					</Button> */}
+					<Button className='badge-btn'>
+						<a href={badge1} download='Badge1.png'>
+							Download
+						</a>
 					</Button>
 				</Carousel.Caption>
 			</Carousel.Item>
@@ -36,8 +41,13 @@ const ModalCarousel = () => {
 				<br />
 				<br />
 				<Carousel.Caption>
-					<Button onClick={() => download(badge2)} className='badge-btn'>
+					{/* <Button onClick={() => download(badge2)} className='badge-btn'>
 						Download
+					</Button> */}
+					<Button className='badge-btn'>
+						<a href={badge2} download='Badge2.png'>
+							Download
+						</a>
 					</Button>
 				</Carousel.Caption>
 			</Carousel.Item>
@@ -48,8 +58,13 @@ const ModalCarousel = () => {
 				<br />
 				<br />
 				<Carousel.Caption>
-					<Button onClick={() => download(badge3)} className='badge-btn'>
+					{/* <Button onClick={() => download(badge3)} className='badge-btn'>
 						Download
+					</Button> */}
+					<Button className='badge-btn'>
+						<a href={badge3} download='Badge3.png'>
+							Download
+						</a>
 					</Button>
 				</Carousel.Caption>
 			</Carousel.Item>
@@ -60,8 +75,13 @@ const ModalCarousel = () => {
 				<br />
 				<br />
 				<Carousel.Caption>
-					<Button onClick={() => download(badge4)} className='badge-btn'>
+					{/* <Button onClick={() => download(badge4)} className='badge-btn'>
 						Download
+					</Button> */}
+					<Button className='badge-btn'>
+						<a href={badge4} download='Badge4.png'>
+							Download
+						</a>
 					</Button>
 				</Carousel.Caption>
 			</Carousel.Item>
@@ -73,13 +93,18 @@ const ModalCarousel = () => {
 				<br />
 
 				<Carousel.Caption>
-					<Button onClick={() => download(badge5)} className='badge-btn'>
+					{/* <Button onClick={() => download(badge5)} className='badge-btn'>
 						Download
+					</Button> */}
+					<Button className='badge-btn'>
+						<a href={badge5} download='Badge5.png'>
+							Download
+						</a>
 					</Button>
 				</Carousel.Caption>
 			</Carousel.Item>
 		</Carousel>
-	);
+	)
 };
 
 export default ModalCarousel;
