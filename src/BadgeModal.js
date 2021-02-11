@@ -11,21 +11,21 @@ import Button from 'react-bootstrap/Button';
 import ModalCarousel from './ModalCarousel';
 
 function BadgeModal({ show, handleClose }) {
-
-
-
 	return (
 		<BootstrapModal show={show} onHide={handleClose}>
-			<BootstrapModal.Header closeButton>
-				<BootstrapModal.Title>Badges</BootstrapModal.Title>
+			<BootstrapModal.Header closeButton className='badge-modal-header'>
+				<BootstrapModal.Title className='modal-title'>
+					Badges
+				</BootstrapModal.Title>
 			</BootstrapModal.Header>
-			<BootstrapModal.Body>
-
+			<BootstrapModal.Body className='badge-modal'>
 				<ModalCarousel />
-
 			</BootstrapModal.Body>
-			<BootstrapModal.Footer>
-				<Button variant='secondary' onClick={handleClose}>
+			<BootstrapModal.Footer className='modal-footer' >
+				<Button
+					variant='secondary'
+					onClick={handleClose}
+					className='badge-modal-btn'>
 					Close
 				</Button>
 			</BootstrapModal.Footer>
