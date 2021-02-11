@@ -64,10 +64,10 @@ const Home = () => {
 				</Row>
 			</div>
 			<div className='card-wrapper'>
-				<Row xs={12}>
-					<div className='carousel'>
+				<Row md={12}>
+					<Col className='carousel'>
 						<CarouselHome />
-					</div>
+					</Col>
 				</Row>
 			</div>
 
