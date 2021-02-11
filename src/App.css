@@ -67,10 +67,20 @@
 }
 .text-center {
 	width: 100%;
-	max-width: 600px;
+	max-width: 650px;
+	min-width: 374px;
 	height: auto;
-	margin: 2em 2em 2em 2em;
-	margin-top: 6em;
+	margin: 4em 1em 1em 2em;
+	padding: 1em;
+	border-radius: 8px;
+	background-color: #e1eeff;
+}
+.talk-wrapper {
+	width: 100%;
+	max-width: 650px;
+	min-width: 374px;
+	height: auto;
+	margin: 1em 1em 1em 1em;
 	padding: 1em;
 	border-radius: 8px;
 }
@@ -88,11 +98,11 @@
 .header {
 	max-width: 650px;
 	width: 100%;
+	min-width: 374px;
 	max-height: 150px;
 	height: auto;
-	padding: 1em 1em 1em 1em;
-	margin: 1em 1em 1em 1em;
-	font-size: 1rem;
+	padding: 1em 1em 4em 2em;
+	margin: 1em 1em 1em 2em;
 	background-color: #e1eeff;
 	text-align: left;
 	border-radius: 8px;
@@ -104,8 +114,12 @@
 }
 .header-title {
 	font-family: 'Fredoka One';
-	font-size: 18px;
+	font-size: 24px;
 	/* font-size: calc(15% + 3.5vw); */
+}
+.header-image {
+	max-width: 25%;
+	max-height: auto;
 }
 .header-p {
 	font-family: 'Open Sans';
@@ -117,12 +131,14 @@
 .cdc-card {
 	width: 100%;
 	height: auto;
+	max-width: 650px;
+	min-width: 374px;
 	/* left: 150px; */
 	/* top: 100px; */
 	/* margin: 1em; */
 	margin-top: 1em;
 	margin-bottom: 2em;
-	margin-right: 2em;
+	margin-right: 1em;
 	margin-left: 2em;
 	cursor: pointer;
 	color: black;
@@ -152,6 +168,10 @@
 	color: black;
 	font-size: 18px;
 }
+.card-wrapper {
+	display: flex;
+	border-radius: 8px;
+}
 hr {
 	display: block;
 	border: 0;
@@ -163,10 +183,11 @@ hr {
 	text-align: center;
 }
 .carousel {
-	width: 374px;
-	height: 527px;
-	margin: 1em 1em 1em 1em;
-	/* top: 1em; */
+	width: auto !important;
+	height: auto !important;
+	max-width: 374px;
+	max-height: 527px;
+	margin: auto;
 	border-radius: 8px;
 	background-color: #e5e5e5;
 }
@@ -205,14 +226,13 @@ hr {
 .modal-title img {
 	object-position: 50% 50%;
 }
-/* .modal-carousel .content {
-	display: block;
-	width: 100%;
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 25px;
-	color: white;
-} */
+a,
+a:hover,
+a:focus,
+a:active {
+	text-decoration: none;
+	color: inherit;
+}
 .talk-card {
 	width: auto;
 	max-width: 600px;
@@ -258,8 +278,33 @@ hr {
 	background-color: #fffaca;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
 	.brand {
 		font-size: 30px !important;
+	}
+	.badge-image {
+		max-width: 65px;
+	}
+	.carousel {
+		width: 374px;
+		height: 527px;
+		margin: auto;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		margin-right: 2em;
+		margin-left: 2em;
+		border-radius: 8px;
+		background-color: #e5e5e5;
+	}
+	.header-title {
+		font-family: 'Fredoka One';
+		font-size: 18px;
+		/* font-size: calc(15% + 3.5vw); */
+	}
+	.header-p {
+		font-family: 'Open Sans';
+		font-size: 12px;
+		/* font-size: calc(15% + 2.5vw); */
+		max-width: 20em;
 	}
 }

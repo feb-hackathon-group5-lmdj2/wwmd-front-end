@@ -27,20 +27,23 @@ const Home = () => {
 			<Row>
 				<Col xs={3} md={2}></Col>
 				<Col xs={12} md={8}>
-					<Jumbotron fluid className='header' class='container'>
-						<Row>
-							<Col xs={6} md={4}>
+					<Card border='light' className='header' class='container'>
+						<Row xs={3} xs={12}>
+							<div>
 								<h4 className='header-title'>Hi, I'm Max the mask!</h4>
 								<p className='header-p'>
 									We’ve worked hard to stop COVID-19 in it’s tracks, let’s keep
 									up the good work!
 								</p>
-							</Col>
-							<Col xs={6} md={4}>
-								<Image fluid className='header-image' src={headerImg} />
-							</Col>
+							</div>
+							<Image
+								fluid
+								className='header-image'
+								src={headerImg}
+								alt='header max'
+							/>
 						</Row>
-					</Jumbotron>
+					</Card>
 				</Col>
 				<Col xs={3} md={2}></Col>
 			</Row>
@@ -49,63 +52,61 @@ const Home = () => {
 					<Col xs={3} md={2}></Col>
 					<Col xs={12} md={8}>
 						<Card border='light' className='talk-card' className='text-left'>
-							<Row>
-								<Col xs={3} md={2}></Col>
-								<Col xs={15} md={10}>
-									<Card.Title className='cdc-click'>
-										Let’s talk Covid-19 vaccines
-									</Card.Title>
-								</Col>
-								<Col xs={3} md={2}></Col>
-							</Row>
-							<Row>
-								<Col xs={3} md={2}></Col>
-								<Col xs={12} md={8}>
-									<Card.Text className='header-p'>
-										How to have productive conversation about COVID-19 Vaccines
-									</Card.Text>
-								</Col>
-								<Col xs={3} md={2}></Col>
-							</Row>
+							<Card.Title className='cdc-click'>
+								Let’s talk Covid-19 vaccines
+							</Card.Title>
+							<Card.Text className='header-p'>
+								How to have productive conversation about COVID-19 Vaccines
+							</Card.Text>
 						</Card>
 					</Col>
 					<Col xs={3} md={2}></Col>
 				</Row>
 			</div>
 			<div className='card-wrapper'>
-				<Row>
-					<Col xs={3} md={2}></Col>
-					<Col xs={12} md={8}>
+				<Row xs={12}>
+					<div className='carousel'>
 						<CarouselHome />
-					</Col>
-					<Col xs={3} md={2}></Col>
+					</div>
 				</Row>
 			</div>
 
 			<div>
-				<Card className='badge-wrapper' className='text-center'>
-					<Card.Title className='cdc-click'>Grab your Badge!</Card.Title>
-					<Card.Body>
-						<Row>
-							<p>
-								Share with your friends where you're at in your vaccine journey.
-							</p>
-						</Row>
-						<Row>
-							<Col xs={3} md={2}>
-								<Image fluid className='badge-image' src={hearts} />
-							</Col>
-							<Col xs={18} md={12}>
+				<Row>
+					<Col xs={3} md={2}></Col>
+					<Col xs={12} md={8}>
+						<Card className='text-center'>
+							<Card.Title className='cdc-click'>
+								Download your Badge!
+							</Card.Title>
+							<Card.Body>
+								<p>
+									Share with your friends where you're at in your vaccine
+									journey.
+								</p>
+
+								<Image
+									fluid
+									className='badge-image'
+									src={hearts}
+									alt='hearts'
+								/>
+
 								<Button className='badge-btn' onClick={handleShow}>
 									START NOW
 								</Button>
-							</Col>
-							<Col xs={3} md={2}>
-								<Image fluid className='badge-image' src={bandaidMask} />
-							</Col>
-						</Row>
-					</Card.Body>
-				</Card>
+
+								<Image
+									fluid
+									className='badge-image'
+									src={bandaidMask}
+									alt='bandaid mask'
+								/>
+							</Card.Body>
+						</Card>
+					</Col>
+					<Col xs={3} md={2}></Col>
+				</Row>
 			</div>
 			<Row>
 				<Col xs={3} md={2}></Col>
