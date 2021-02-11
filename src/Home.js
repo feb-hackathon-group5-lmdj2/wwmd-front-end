@@ -27,7 +27,7 @@ const Home = () => {
 			<Row>
 				<Col xs={3} md={2}></Col>
 				<Col xs={12} md={8}>
-					<Card border='light' className='header' class='container'>
+					<Card border='light' className='header container'>
 						<Row xs={3} xs={12}>
 							<div>
 								<h4 className='header-title'>Hi, I'm Max the mask!</h4>
@@ -64,10 +64,10 @@ const Home = () => {
 				</Row>
 			</div>
 			<div className='card-wrapper'>
-				<Row xs={12}>
-					<div className='carousel'>
+				<Row md={12}>
+					<Col className='carousel'>
 						<CarouselHome />
-					</div>
+					</Col>
 				</Row>
 			</div>
 
