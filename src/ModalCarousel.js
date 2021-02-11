@@ -16,51 +16,60 @@ function download(badge) {
 const ModalCarousel = () => {
 	return (
 		<Carousel className='modal-carousel' style={{ minHeight: '40vh' }}>
-			<Carousel.Item style={{ minHeight: '5vh' }}>
+			<Carousel.Item style={{ minHeight: '5vh' }} className='carousel-item'>
 				<img className='d-block w-100' src={badge1} alt='Badge 1' />
+				<br />
+				<br />
+				<br />
+				<br />
+
 				<Carousel.Caption>
 					<Button onClick={() => download(badge1)}>Download</Button>
-					{/* <FacebookShareButton
-						url={
-							'https://www.cdc.gov/coronavirus/2019-ncov/vaccines/index.html'
-						}
-						quote={'I got the COVID vaccine!'}
-						hashtag='#covid19'
-						className={FacebookShareButton}>
-						<FacebookIcon size={36} />
-					</FacebookShareButton> */}
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item>
 				<img className='d-block w-100' src={badge2} alt='Badge 2' />
-
+				<br />
+				<br />
+				<br />
+				<br />
 				<Carousel.Caption>
 					<Button onClick={() => download(badge2)}>Download</Button>
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item>
 				<img className='d-block w-100' src={badge3} alt='Badge 3' />
-
+				<br />
+				<br />
+				<br />
+				<br />
 				<Carousel.Caption>
 					<Button onClick={() => download(badge3)}>Download</Button>
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item>
 				<img className='d-block w-100' src={badge4} alt='Badge 4' />
-
+				<br />
+				<br />
+				<br />
+				<br />
 				<Carousel.Caption>
 					<Button onClick={() => download(badge4)}>Download</Button>
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item>
 				<img className='d-block w-100' src={badge5} alt='Badge 5' />
+				<br />
+				<br />
+				<br />
+				<br />
 
 				<Carousel.Caption>
 					<Button onClick={() => download(badge5)}>Download</Button>
 				</Carousel.Caption>
 			</Carousel.Item>
 		</Carousel>
-	);
+	)
 };
 
 export default ModalCarousel;
