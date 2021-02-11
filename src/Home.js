@@ -11,6 +11,7 @@ import {
 import CarouselHome from './CarouselHome';
 import BadgeModal from './BadgeModal';
 import Axios from 'axios';
+import headerImg from './images/max-header.png';
 
 const Home = () => {
 	const [show, setShow] = useState(false);
@@ -29,13 +30,15 @@ const Home = () => {
 						We’ve worked hard to stop COVID-19 in it’s tracks, let’s keep up the
 						good work!
 					</p>
-					{/* <Image src='./images/max-header.png' fluid /> */}
+					{/* <Image className='header-image' src={headerImg} /> */}
 				</Jumbotron>
 			</div>
 			<div className='talk-wrapper'>
 				<Card className='talk-card'>
-					<Card.Title>Let’s talk covid vaccines</Card.Title>
-					<Card.Text>
+					<Card.Title className='cdc-click'>
+						Let’s talk covid vaccines
+					</Card.Title>
+					<Card.Text className='header-p'>
 						How to have productive conversation about COVID-19 Vaccines
 					</Card.Text>
 				</Card>
@@ -46,7 +49,7 @@ const Home = () => {
 
 			<div className='badge-wrapper'>
 				<Card className='badge-card'>
-					<Card.Title>Grab your Badge 1 Card</Card.Title>
+					<Card.Title className='cdc-click'>Grab your Badge 1 Card</Card.Title>
 					<Button className='badge-btn' onClick={handleShow}>
 						START NOW
 					</Button>
@@ -54,11 +57,13 @@ const Home = () => {
 			</div>
 			<div className='cdc-wrapper'>
 				<Button className='cdc-card'>
+					<hr></hr>
 					<h4 className='cdc-click'>CLICK HERE</h4>{' '}
 					<p className='cdc-p'>
 						To find out more from the CDC about COVID-19 vaccinations and when
 						you can get it in your state
 					</p>
+					<hr></hr>
 				</Button>
 			</div>
 			<BadgeModal show={show} handleClose={handleClose} />
