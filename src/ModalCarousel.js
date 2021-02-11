@@ -24,8 +24,13 @@ const ModalCarousel = () => {
 				<br />
 
 				<Carousel.Caption>
-					<Button onClick={() => download(badge1)} className='badge-btn'>
+					{/* <Button onClick={() => download(badge1)} className='badge-btn'>
 						Download
+					</Button> */}
+					<Button className='badge-btn'>
+						<a href={badge1} download='Badge1.png' >
+							Download
+						</a>
 					</Button>
 				</Carousel.Caption>
 			</Carousel.Item>
@@ -79,7 +84,7 @@ const ModalCarousel = () => {
 				</Carousel.Caption>
 			</Carousel.Item>
 		</Carousel>
-	);
+	)
 };
 
 export default ModalCarousel;
