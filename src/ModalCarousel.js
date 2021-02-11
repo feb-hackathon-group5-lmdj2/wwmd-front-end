@@ -24,7 +24,9 @@ const ModalCarousel = () => {
 				<br />
 
 				<Carousel.Caption>
-					<Button onClick={() => download(badge1)}>Download</Button>
+					<Button onClick={() => download(badge1)} className='badge-btn'>
+						Download
+					</Button>
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item>
@@ -34,7 +36,9 @@ const ModalCarousel = () => {
 				<br />
 				<br />
 				<Carousel.Caption>
-					<Button onClick={() => download(badge2)}>Download</Button>
+					<Button onClick={() => download(badge2)} className='badge-btn'>
+						Download
+					</Button>
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item>
@@ -44,7 +48,9 @@ const ModalCarousel = () => {
 				<br />
 				<br />
 				<Carousel.Caption>
-					<Button onClick={() => download(badge3)}>Download</Button>
+					<Button onClick={() => download(badge3)} className='badge-btn'>
+						Download
+					</Button>
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item>
@@ -54,7 +60,9 @@ const ModalCarousel = () => {
 				<br />
 				<br />
 				<Carousel.Caption>
-					<Button onClick={() => download(badge4)}>Download</Button>
+					<Button onClick={() => download(badge4)} className='badge-btn'>
+						Download
+					</Button>
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item>
@@ -65,11 +73,13 @@ const ModalCarousel = () => {
 				<br />
 
 				<Carousel.Caption>
-					<Button onClick={() => download(badge5)}>Download</Button>
+					<Button onClick={() => download(badge5)} className='badge-btn'>
+						Download
+					</Button>
 				</Carousel.Caption>
 			</Carousel.Item>
 		</Carousel>
-	)
+	);
 };
 
 export default ModalCarousel;
