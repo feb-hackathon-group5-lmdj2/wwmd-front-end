@@ -6,6 +6,7 @@ import {
 	Col,
 	Row,
 	Image,
+	Link,
 	Jumbotron,
 } from 'react-bootstrap';
 import CarouselHome from './CarouselHome';
@@ -24,7 +25,7 @@ const Home = () => {
 		// <Container fluid='md'>
 		<div className='site-wrapper'>
 			<div className='jumbo-wrapper'>
-				<Jumbotron className='header'>
+				<Jumbotron className='header' class='container'>
 					<h4 className='header-title'>Hi, I'm Max the mask!</h4>
 					<p className='header-p'>
 						We’ve worked hard to stop COVID-19 in it’s tracks, let’s keep up the
@@ -43,29 +44,33 @@ const Home = () => {
 					</Card.Text>
 				</Card>
 			</div>
-			<div className='cara-wrapper'>
+			<div className='card-wrapper'>
 				<CarouselHome />
 			</div>
 
 			<div className='badge-wrapper'>
-				<Card className='badge-card'>
+				<Card className='text-center' >
 					<Card.Title className='cdc-click'>Grab your Badge 1 Card</Card.Title>
 					<Button className='badge-btn' onClick={handleShow}>
 						START NOW
 					</Button>
 				</Card>
 			</div>
-			<div className='cdc-wrapper'>
-				<Button className='cdc-card'>
-					<hr></hr>
-					<h4 className='cdc-click'>CLICK HERE</h4>{' '}
-					<p className='cdc-p'>
-						To find out more from the CDC about COVID-19 vaccinations and when
-						you can get it in your state
-					</p>
-					<hr></hr>
-				</Button>
-			</div>
+			<Row className='cdc-wrapper'>
+				<a
+					target='_blank'
+					href='https://www.cdc.gov/coronavirus/2019-ncov/vaccines/index.html'>
+					<Button className='cdc-card'>
+						<hr></hr>
+						<h4 className='cdc-click'>CLICK HERE</h4>{' '}
+						<p className='cdc-p'>
+							To find out more from the CDC about COVID-19 vaccinations and when
+							you can get it in your state
+						</p>
+						<hr></hr>
+					</Button>
+				</a>
+			</Row>
 			<BadgeModal show={show} handleClose={handleClose} />
 		</div>
 	);
